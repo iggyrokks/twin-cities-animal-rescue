@@ -242,3 +242,39 @@ footer p {
     font-size: 1.9rem;
   }
 }
+.interest-panel {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: var(--peach);
+  color: var(--dark-green);
+  border-radius: 8px;
+}
+
+.interest-panel h3 {
+  margin-top: 0;
+}
+
+.interest-panel p {
+  margin-bottom: 0;
+}
+
+.field-error {
+  margin: 6px 0 16px;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid var(--dark-green);
+}
+
+#storage-notice {
+  margin-top: 8px;
+}
+
+#form-result:not(:empty) {
+  padding: 16px;
+  border: 2px solid var(--teal);
+  border-radius: 8px;
+  font-weight: bold;
+}
