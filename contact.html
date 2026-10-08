@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Twin Cities Animal Rescue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Get Involved</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Adopt, Foster, and Volunteer</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Volunteer and Foster Interest Form</h2>
+      <p>Tell us how you would like to help and what experience
+        you have with animals.</p>
+      <p id="form-note">
+        This is a class demonstration and does not send an inquiry.
+        Use sample information only. Required fields are labeled.
+      </p>
+
+      <form action="contact.html" method="get"
+        aria-describedby="form-note">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+
+          <p>
+            <label for="name">Name (required)</label><br>
+            <input type="text" id="name" name="name"
+              minlength="2" maxlength="80" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="email">Email (required)</label><br>
+            <input type="email" id="email" name="email"
+              autocomplete="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Interests and Experience</legend>
+
+          <p>
+            <label for="interest">Interest Type (required)</label><br>
+            <select id="interest" name="interest" required>
+              <option value="">Select an interest</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="foster">Foster</option>
+              <option value="adoption">Adoption Information</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="availability">Availability (required)</label><br>
+            <input type="text" id="availability" name="availability"
+              placeholder="For example, Saturday mornings"
+              maxlength="120" required>
+          </p>
+
+          <p>
+            <label for="experience">Experience with Pets (required)</label><br>
+            <textarea id="experience" name="experience"
+              rows="4" cols="30" maxlength="500" required></textarea>
+          </p>
+
+          <p>
+            <label for="message">Short Message</label><br>
+            <textarea id="message" name="message"
+              rows="4" cols="30" maxlength="750"></textarea>
+          </p>
+        </fieldset>
+
+        <p><button type="submit">Check Sample Inquiry</button></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Service Area and Office Hours</h2>
+      <p>The following details are sample content for this class project.</p>
+
+      <h3>Service Area</h3>
+      <p>Minneapolis, Saint Paul, and nearby Twin Cities communities.</p>
+
+      <h3>Office Hours</h3>
+      <p>Monday through Friday, 10 a.m. to 4 p.m.</p>
+      <p>Visits are by appointment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Twin Cities Animal Rescue</p>
+    <p>Class project by Ashley Kendrick. Sample content for educational use.</p>
+  </footer>
+</body>
+</html>
